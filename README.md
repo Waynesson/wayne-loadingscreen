@@ -2,6 +2,8 @@
 
 A modern, feature-rich loading screen for FiveM servers with staff display, music controls, and server status.
 
+![Preview](html/assets/preview.png)
+
 ## Features
 - 🎵 Background music with toggle controls
 - 👥 Staff team display
