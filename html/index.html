@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Server Loading Screen</title>
+</head>
+
+<body>
+    <div id="overlay">
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="assets/bgvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="server-info">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Server Logo" class="server-logo" />
+            </div>
+            <div class="server-status">
+                <div class="status-item">
+                    <span class="status-label">Players Online</span>
+                    <span class="status-value">0/0</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Server Status</span>
+                    <span class="status-value online">Online</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading-container">
+            <div class="loading-status">
+                <span class="loading-text">Loading Resources</span>
+                <span class="loading-percentage">0%</span>
+            </div>
+            <div class="loadbar">
+                <div class="progressBar"></div>
+            </div>
+        </div>
+
+        <div class="controls-container">
+            <div class="control-item">
+                <span class="key-indicator">SPACE</span>
+                <span class="control-text">Toggle Music</span>
+            </div>
+            <div class="control-item">
+                <span class="key-indicator">H</span>
+                <span class="control-text">Toggle Screen</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-section">
+        <div class="staff-header">
+            <h2>Staff Team</h2>
+        </div>
+        
+        <div class="staff-members">
+            <div class="staff-card owner">
+                <div class="staff-profile">
+                    <img src="assets/pfp1.png" alt="Owner Profile">
+                </div>
+                <div class="staff-info">
+                    <h3>Waynesson</h3>
+                    <div class="roles">
+                        <span class="role owner-role">Owner</span>
+                        <span class="role head-dev-role">Head Developer</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card admin">
+                <div class="staff-profile">
+                    <img src="assets/pfp2.png" alt="Staff Profile">
+                </div>
+                <div class="staff-info">
+                    <h3>Staff 2</h3>
+                    <div class="roles">
+                        <span class="role admin-role">Administrator</span>
+                        <span class="role dev-role">Developer</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card dev">
+                <div class="staff-profile">
+                    <img src="assets/pfp3.png" alt="Staff Profile">
+                </div>
+                <div class="staff-info">
+                    <h3>Staff 3</h3>
+                    <div class="roles">
+                        <span class="role head-dev-role">Head Developer</span>
+                        <span class="role mod-role">Moderator</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card mod">
+                <div class="staff-profile">
+                    <img src="assets/pfp4.png" alt="Staff Profile">
+                </div>
+                <div class="staff-info">
+                    <h3>Staff 4</h3>
+                    <div class="roles">
+                        <span class="role admin-role">Administrator</span>
+                        <span class="role mod-role">Moderator</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card staff">
+                <div class="staff-profile">
+                    <img src="assets/pfp5.png" alt="Staff Profile">
+                </div>
+                <div class="staff-info">
+                    <h3>Staff 5</h3>
+                    <div class="roles">
+                        <span class="role dev-role">Developer</span>
+                        <span class="role mod-role">Moderator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <div class="music-info">
+            <span class="music-title">Currently Playing:</span>
+            <span class="song-name">Background Music</span>
+        </div>
+        <audio id="leson" src="assets/music.mp3" autoplay="true" hidden="true" loop="true"></audio>
+    </div>
+
+    <div id="black-screen" class="hidden">
+        <div class="overlay-content">
+            <span class="overlay-icon">⚠️</span>
+            <h1 class="black-screen-text">Screen Hidden</h1>
+            <span class="overlay-subtext">Press H to show loading screen</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
